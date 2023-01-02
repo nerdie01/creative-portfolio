@@ -1,178 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Creative Portfolio</title>
-    <meta property="og:title" content="Creative Portfolio" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-white1);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <!--This is the head section-->
-    <!-- <style> ... </style> -->
-
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <script
-        type="text/javascript"
-        src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"
-      ></script>
-      <link href="./home.css" rel="stylesheet" />
-
-      <div class="home-container">
-        <header class="home-header">
-          <span class="home-my-name">Varun Iyengar</span>
-          <div class="home-description">
-            <span class="home-description1">Musician</span>
-            <span class="home-description2">Artist</span>
-            <span class="home-description3">Game Developer</span>
-          </div>
-        </header>
-        <div class="home-art">
-          <span class="home-description4">Artwork</span>
-          <div class="home-art-content">
-            <div class="home-art-container">
-              <img
-                alt="image"
-                src="public/playground_assets/atlasapprentice-900w.png"
-                class="home-art1"
-              />
-              <span class="home-text">"Atlas and the Apprentice"</span>
-              <span class="home-text01">
-                Atlas grows old and weary. It is humanity's turn to carry the
-                burden of the Earth.
-              </span>
-            </div>
-            <div class="home-art-container1">
-              <img
-                alt="image"
-                src="public/playground_assets/the_forgotten_scribe-500w.png"
-                class="home-image"
-              />
-              <span class="home-text02">"The Forgotten Scribe"</span>
-              <span class="home-text03">
-                The rediscovery of the high sciences long lost in the eras of
-                chaos and decline.
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="home-music">
-          <span class="home-description5">
-            <span>Music</span>
-            <br />
+<div>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"
+  ></script>
+  <link href="./home.css" rel="stylesheet" />
+  <div class="home-container">
+    <header class="home-header">
+      <span class="home-my-name">Varun Iyengar</span>
+      <div class="home-description">
+        <span class="home-description01">Musician</span>
+        <span class="home-description02">Artist</span>
+        <span class="home-description03">Programmer</span>
+        <span class="home-description04">Game Developer</span>
+      </div>
+    </header>
+    <div class="home-art">
+      <span class="home-description05">Artwork</span>
+      <div class="home-art-content">
+        <div class="home-art-container">
+          <img
+            alt="image"
+            src="/playground_assets/atlasapprentice-900w.png"
+            class="home-art1"
+          />
+          <span class="home-text">&quot;Atlas and the Apprentice&quot;</span>
+          <span class="home-text01">
+            Atlas grows old and weary. It is humanity&apos;s turn to carry the
+            burden of the Earth.
           </span>
-          <div class="home-music-content">
-            <div class="home-music-container">
-              <div class="home-div">
-                <dangerous-html
-                  html="<iframe src='https://flat.io/embed/61f2f926c3ebd3001379bdfb?layout=page&amp;appId=63af72a20b46df6731d94ee0&amp;sharingKey=dc505749cab695f158c0e88e7815c97b3f60560944e8324b1b4406b04d14e33ee73e4616586fc1e8aff2d7f8bfa8f8169e6319bf84842a12a1115315dc4cb5bc' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
-                ></dangerous-html>
-              </div>
-              <span class="home-text06">The Heat Death of the Universe</span>
-              <span class="home-text07">
-                <span>The sound of the end of time and space.</span>
-                <br />
-              </span>
-            </div>
-            <div class="home-music-container1">
-              <div class="home-div1">
-                <dangerous-html
-                  html="<iframe src='https://flat.io/embed/62bce047f7c7cb0012317935?layout=page&amp;themePrimary=%23000000&amp;appId=63af72a20b46df6731d94ee0&amp;sharingKey=529b6b393546c2c5670b7a452cc8f6455b0ce6bbf95ad7d3cb2a7e71e9cfa89f4ebe73f2243f7036ebb828e2f3589f561d2deedc58ec4317286ca0569bd203a7' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
-                ></dangerous-html>
-              </div>
-              <span class="home-text10">Raise Those Solar Sails</span>
-              <span class="home-text11">
-                <span>Shanty music for the first explorers of space.</span>
-                <br />
-              </span>
-            </div>
-            <div class="home-music-container2">
-              <div class="home-div2">
-                <dangerous-html
-                  html="<iframe src='https://flat.io/embed/5f839d2134604c7ff3f50797?layout=page&amp;appId=63af72a20b46df6731d94ee0&amp;sharingKey=2c251a96561a77b7af06a4a58f246e827d7fbd35da103d593994ce2307d1741a12fd88f162390bbdd6a850167f84d39c06f4a29022f0e13b84e46e6cd1673189' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
-                ></dangerous-html>
-              </div>
-              <span class="home-text14">The Story of a Blue Marble</span>
-              <span class="home-text15">
-                <span>
-                  From birth until death, this is our story. All of us.
-                </span>
-                <br />
-              </span>
-            </div>
-            <div class="home-music-container3">
-              <div class="home-div3">
-                <dangerous-html
-                  html="<iframe src='https://flat.io/embed/6399d0c8bf0a1acda80a906c?layout=page&amp;appId=63af72a20b46df6731d94ee0&amp;sharingKey=359db2889a7c02978ebd23b03c0e4041af034bebde8885e7a26d15d6b3f861f3cc039ad084d66a384bb1866e75d57ef2ed0d5d66fe391de9fda1b9a2273ff10f' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
-                ></dangerous-html>
-              </div>
-              <span class="home-text18">Astral Requiem</span>
-              <span class="home-text19">
-                <span>The first Astral Conquerer seeks gold and glory.</span>
-                <br />
-              </span>
-            </div>
-          </div>
         </div>
-        <div class="home-games">
-          <span class="home-description6">Games</span>
-          <div class="home-games-content">
-            <div class="home-game-container">
-              <div class="home-div4">
-                <dangerous-html
-                  html="<iframe frameborder='0' src='https://itch.io/embed/1488660?bg_color=272727&amp;fg_color=DCDCDC&amp;link_color=4DA3F8&amp;border_color=272727' width='552' height='167'><a href='https://nerdie01.itch.io/degrees'>20 Degrees by vvvirtual</a></iframe>"
-                ></dangerous-html>
-              </div>
-              <div class="home-div5">
-                <dangerous-html
-                  html="<iframe frameborder='0' src='https://itch.io/embed/1532413?bg_color=272727&amp;fg_color=DCDCDC&amp;link_color=4DA3F8&amp;border_color=272727' width='552' height='167'><a href='https://nerdie01.itch.io/ssps'>Solar System Postal Service by vvvirtual</a></iframe>"
-                ></dangerous-html>
-              </div>
-            </div>
-          </div>
+        <div class="home-art-container1">
+          <img
+            alt="image"
+            src="/playground_assets/the_forgotten_scribe-500w.png"
+            class="home-image"
+          />
+          <span class="home-text02">&quot;The Forgotten Scribe&quot;</span>
+          <span class="home-text03">
+            The rediscovery of the high sciences long lost in the eras of chaos
+            and decline.
+          </span>
         </div>
-        <div class="home-footer">
-          <div class="home-description7">
-            <span class="home-description8">
-              <span>©2022 Varun Iyengar</span>
-              <br />
-            </span>
+      </div>
+    </div>
+    <div class="home-projects">
+      <span class="home-description06">
+        <span>Projects</span>
+        <br />
+      </span>
+      <div class="home-projects-content">
+        <div>
+          <dangerous-html
+            html="<iframe width='560' height='315' src='https://www.youtube.com/embed/Vi48YPz0T6k' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+    <div class="home-games">
+      <span class="home-description07">Games</span>
+      <div class="home-games-content">
+        <div class="home-game-container">
+          <div class="home-div1">
+            <dangerous-html
+              html="<iframe frameborder='0' src='https://itch.io/embed/1488660?bg_color=272727&amp;fg_color=DCDCDC&amp;link_color=4DA3F8&amp;border_color=272727' width='552' height='167'><a href='https://nerdie01.itch.io/degrees'>20 Degrees by vvvirtual</a></iframe>"
+            ></dangerous-html>
+          </div>
+          <div class="home-div2">
+            <dangerous-html
+              html="<iframe frameborder='0' src='https://itch.io/embed/1532413?bg_color=272727&amp;fg_color=DCDCDC&amp;link_color=4DA3F8&amp;border_color=272727' width='552' height='167'><a href='https://nerdie01.itch.io/ssps'>Solar System Postal Service by vvvirtual</a></iframe>"
+            ></dangerous-html>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+    <div class="home-music">
+      <span class="home-description08">
+        <span>Music</span>
+        <br />
+      </span>
+      <div class="home-music-content">
+        <div class="home-music-container">
+          <div class="home-div3">
+            <dangerous-html
+              html="<iframe src='https://flat.io/embed/5f839d2134604c7ff3f50797?layout=page&appId=63af72a20b46df6731d94ee0&sharingKey=2c251a96561a77b7af06a4a58f246e827d7fbd35da103d593994ce2307d1741a12fd88f162390bbdd6a850167f84d39c06f4a29022f0e13b84e46e6cd1673189' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
+            ></dangerous-html>
+          </div>
+          <span class="home-text08">The Story of a Blue Marble</span>
+          <span class="home-text09">
+            <span>From birth until death, this is our story. All of us.</span>
+            <br />
+          </span>
+        </div>
+        <div class="home-music-container1">
+          <div class="home-div4">
+            <dangerous-html
+              html="<iframe src='https://flat.io/embed/62bce047f7c7cb0012317935?layout=page&themePrimary=%23000000&appId=63af72a20b46df6731d94ee0&sharingKey=529b6b393546c2c5670b7a452cc8f6455b0ce6bbf95ad7d3cb2a7e71e9cfa89f4ebe73f2243f7036ebb828e2f3589f561d2deedc58ec4317286ca0569bd203a7' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
+            ></dangerous-html>
+          </div>
+          <span class="home-text12">Raise Those Solar Sails</span>
+          <span class="home-text13">
+            <span>Shanty music for the first explorers of space.</span>
+            <br />
+          </span>
+        </div>
+        <div class="home-music-container2">
+          <div class="home-div5">
+            <dangerous-html
+              html="<iframe src='https://flat.io/embed/6399d0c8bf0a1acda80a906c?layout=page&appId=63af72a20b46df6731d94ee0&sharingKey=359db2889a7c02978ebd23b03c0e4041af034bebde8885e7a26d15d6b3f861f3cc039ad084d66a384bb1866e75d57ef2ed0d5d66fe391de9fda1b9a2273ff10f' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
+            ></dangerous-html>
+          </div>
+          <span class="home-text16">Astral Requiem</span>
+          <span class="home-text17">
+            <span>A song of stellar infinity and cosmic vastness.</span>
+            <br />
+          </span>
+        </div>
+        <div class="home-music-container3">
+          <div class="home-div6">
+            <dangerous-html
+              html="<iframe src='https://flat.io/embed/61f2f926c3ebd3001379bdfb?layout=page&appId=63af72a20b46df6731d94ee0&sharingKey=dc505749cab695f158c0e88e7815c97b3f60560944e8324b1b4406b04d14e33ee73e4616586fc1e8aff2d7f8bfa8f8169e6319bf84842a12a1115315dc4cb5bc' height='450' width='100%' frameBorder='0' allowfullscreen allow='midi'></iframe>"
+            ></dangerous-html>
+          </div>
+          <span class="home-text20">The Heat Death of the Universe</span>
+          <span class="home-text21">
+            <span>The sound of the end of time and space.</span>
+            <br />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="home-research">
+      <span class="home-description09">
+        <span>Research</span>
+        <br />
+      </span>
+      <div class="home-research-content">
+        <iframe
+          src="https://caeluslabs.blogspot.com/"
+          class="home-iframe"
+        ></iframe>
+      </div>
+    </div>
+    <div class="home-footer">
+      <div class="home-description10">
+        <span class="home-description11">
+          <span>©2022 Varun Iyengar</span>
+          <br />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
